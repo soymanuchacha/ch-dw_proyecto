@@ -137,3 +137,47 @@
         height: 1em;
     }
 }
+
+/* Page: traajos */
+@each $trabajo in villavicencio, virazon, grolsch, veganos, lancome, ikigai, fanego, pascale, soto {
+    .portfolio__card--#{$trabajo} {
+        background-image: url(../media/portfolio/#{$trabajo}.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__card {
+        width: 33%;
+        position: relative;
+        &-image {
+            width: 100%;
+            height: 250px;
+        }
+        &--dropdown {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color_coral;
+            h2 {
+                color: white;
+                text-align: center;
+            }
+            p {
+                color: white;
+                text-align: center;
+                font-size: $font-size_medium;
+            }
+        }
+        &:hover .portfolio__card--dropdown {
+            display: block;
+        }
+    }
+}
