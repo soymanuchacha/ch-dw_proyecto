@@ -2,6 +2,9 @@
 nav#nav-header{
     background-color: $color_cyan;
 }
+.navbar-collapse {
+    padding-left: 55%;
+}
 
 //footer
 footer {
@@ -68,4 +71,48 @@ h2 {
             font-size: $font-size_smaller;
         }
     }
+}
+
+/* media queries tablet */
+@media all and (max-width: 1200px) {
+//footer
+footer {
+    padding-bottom: .3em;
+}
+
+//titulares
+h1 {
+    font-size: 1.2rem;
+    &.titular-contacto {
+        padding-top: 1.8em;
+    }
+}
+h2 {
+    font-size: .8rem;
+}
+.nav-section {
+    margin: 2em 4em;
+}
+}
+
+/* media queries celular */
+@media all and (max-width: 576px) {
+//header
+nav#nav-header{
+    padding: 1em;
+}
+
+//titulares
+h1 {
+    font-size: 1.2rem;
+    &.titular-contacto {
+        padding-top: 1.3em;
+    }
+}
+h2 {
+    font-size: 1rem;
+}
+.nav-section {
+    margin: 2em 4em;
+}
 }

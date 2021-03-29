@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p {
   color: #214f7b;
   font-family: "Roboto", sans-serif;
@@ -28,6 +29,10 @@ span {
 
 nav#nav-header {
   background-color: #7dd1f1;
+}
+
+.navbar-collapse {
+  padding-left: 55%;
 }
 
 footer {
@@ -114,6 +119,44 @@ h2 {
   font-size: 0.7rem;
 }
 
+/* media queries tablet */
+@media all and (max-width: 1200px) {
+  footer {
+    padding-bottom: .3em;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h1.titular-contacto {
+    padding-top: 1.8em;
+  }
+  h2 {
+    font-size: .8rem;
+  }
+  .nav-section {
+    margin: 2em 4em;
+  }
+}
+
+/* media queries celular */
+@media all and (max-width: 576px) {
+  nav#nav-header {
+    padding: 1em;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h1.titular-contacto {
+    padding-top: 1.3em;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .nav-section {
+    margin: 2em 4em;
+  }
+}
+
 /* Page: index */
 .banner {
   margin: 4em 4em 0 4em;
@@ -185,7 +228,7 @@ h2 {
 }
 
 .home-servicios__cards {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -220,8 +263,8 @@ h2 {
   margin: 0 4em 2em 4em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat 4, 1fr;
-      grid-template-columns: repeat 4, 1fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 2em;
 }
 
@@ -240,9 +283,6 @@ h2 {
 }
 
 .servicios__card {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
   background-color: white;
   padding: 1.5em;
   -webkit-box-shadow: -6px 6px 20px rgba(234, 88, 83, 0.5);
@@ -329,7 +369,7 @@ h2 {
     background-color: #ea5853;
     height: 25%;
   }
-  100% {
+  100%  {
     background-color: #e82528;
     height: 1em;
   }
@@ -358,13 +398,13 @@ h2 {
     background-color: #ea5853;
     height: 25%;
   }
-  100% {
+  100%  {
     background-color: #e82528;
     height: 1em;
   }
 }
 
-/* Page: traajos */
+/* Page: trabajos */
 .portfolio__card--villavicencio {
   background-image: url(../media/portfolio/villavicencio.jpg);
   background-size: 100%;
@@ -464,6 +504,8 @@ h2 {
 
 .portfolio__card:hover .portfolio__card--dropdown {
   display: block;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 
 /* Page: blog */
@@ -543,11 +585,169 @@ form button#blue-button {
   border-radius: .7em;
   -webkit-box-shadow: 2px 5px 6px #7dd1f1;
           box-shadow: 2px 5px 6px #7dd1f1;
-  padding: 0 4em;
+  padding: .5em 4em;
+  margin-left: 40%;
 }
 
 form button#blue-button:hover {
   color: white;
   font-weight: bold;
+}
+
+/* media queries tablet */
+@media all and (max-width: 1200px) {
+  /* Page: index */
+  .banner {
+    margin: 3em 4em 0 4em;
+  }
+  .banner__text--intro {
+    font-size: 1.8em;
+  }
+  .banner__text--intro + p {
+    font-size: 0.9rem;
+  }
+  /* Page: servicios */
+  .servicios {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .servicios__image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    height: 10em;
+  }
+  .servicios__card--text {
+    font-size: .8em;
+  }
+  /* Page: trabajos */
+  .portfolio__card {
+    width: 50%;
+  }
+  .portfolio__card-image {
+    height: 230px;
+  }
+  .portfolio__card--dropdown {
+    padding-top: 25%;
+  }
+  /* Page: blog */
+  .entrada {
+    width: 85%;
+  }
+  .entrada__image {
+    width: 30%;
+  }
+  .entrada__texto {
+    width: 60%;
+    padding-left: 2.5em;
+  }
+  .entrada__texto--descripcion {
+    width: 100%;
+  }
+  .entrada__texto--button {
+    font-size: .8em;
+    margin-right: 0;
+    border-bottom: 3px solid #fcddce;
+  }
+  /* Page: contacto */
+  form {
+    width: 75%;
+  }
+}
+
+p.p-contacto {
+  width: 70%;
+}
+
+/* media queries celular */
+@media all and (max-width: 576px) {
+  /* Page: index */
+  .banner {
+    margin: 2em;
+  }
+  .banner__text--intro {
+    font-size: 1.6em;
+  }
+  .banner__text--intro + p {
+    font-size: 0.9rem;
+  }
+  .banner__text-contacto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner__text-contacto--redes-item {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+  .banner__image img {
+    width: 80%;
+    margin: 1em auto 0 auto;
+  }
+  /* Page: servicios */
+  .servicios {
+    margin: 0 2em 2em 2em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+  }
+  .servicios__image {
+    display: none;
+  }
+  /* Page: trabajos */
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .portfolio__card {
+    width: 100%;
+    position: relative;
+  }
+  .portfolio__card-image {
+    width: 100%;
+    height: 240px;
+  }
+  .portfolio__card--dropdown {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+  }
+  /* Page: blog */
+  .entrada {
+    display: block;
+    width: 90%;
+    margin: 0 auto 3em auto;
+  }
+  .entrada__image {
+    width: 100%;
+  }
+  .entrada__texto {
+    padding-top: 1.5em;
+    width: 90%;
+    padding-left: 2em;
+    margin-bottom: 2em;
+  }
+  .entrada__texto--descripcion {
+    width: 100%;
+  }
+  .entrada__texto--button {
+    margin-right: 0;
+    border-bottom: 3px solid #fcddce;
+  }
+  /* Page: contacto */
+  p.p-contacto {
+    width: 80%;
+  }
+  form {
+    width: 80%;
+  }
+  form button#blue-button {
+    margin-left: 30%;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
