@@ -30,3 +30,16 @@ footer {
         }
     }
 }
+
+//titulares
+h1 {
+    color: $color_blue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h2 {
+    color: $color_red;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}

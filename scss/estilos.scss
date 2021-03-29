@@ -2,3 +2,73 @@
 @import "variables";
 @import "normalize";
 @import "layout";
+
+/* Page: index */
+//Banner
+.banner {
+    margin: 4em 4em 0 4em;
+    &__text {
+        &--intro {
+            @include titular-banner;
+            +p {
+                font-size: $font-size_default;
+                width: 90%;
+            }
+        }
+        &-contacto {
+            display: flex;
+            &--button {
+                @include blue-button;
+            }
+            &--redes {
+                margin-bottom: 0;
+                &-item {
+                    padding-left: 1em;
+                    display: inline-block;
+                    img {
+                        width: 1.2em;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    &__image img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+//qué podemos trabajar
+.home-servicios {
+    background-color: $color_cream-op;
+    padding: 2em 0 3em 0;
+    &--intro {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    &__cards {
+        width: 90%;
+        margin: 0 auto;
+        &--box {
+            background-color: white;
+            @include shadow_coral (8px, 8px, 15px, .5);
+            padding: 1em;
+            position: relative;
+            h2 {
+                text-align: center;
+            }
+            &-dropdown {
+                position: relative;
+                display: none;
+                p {
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+            &:hover .home-servicios__cards--box-dropdown {
+                display: block;
+            }
+        }
+    }
+}

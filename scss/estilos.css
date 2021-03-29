@@ -51,4 +51,118 @@ footer a {
   width: 1.5em;
   height: auto;
 }
+
+h1 {
+  color: #214f7b;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #e82528;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Page: index */
+.banner {
+  margin: 4em 4em 0 4em;
+}
+
+.banner__text--intro {
+  color: #e82528;
+  font-weight: bold;
+  font-size: 2.3rem;
+  line-height: 1.4em;
+  padding-bottom: .3em;
+  width: 90%;
+}
+
+.banner__text--intro + p {
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.banner__text-contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner__text-contacto--button {
+  text-decoration: none;
+  color: white;
+  background-color: #214f7b;
+  font-size: 0.7rem;
+  padding: .5em 2em;
+  border-radius: .7em;
+  -webkit-box-shadow: 2px 5px 6px #7dd1f1;
+          box-shadow: 2px 5px 6px #7dd1f1;
+}
+
+.banner__text-contacto--button:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.banner__text-contacto--redes {
+  margin-bottom: 0;
+}
+
+.banner__text-contacto--redes-item {
+  padding-left: 1em;
+  display: inline-block;
+}
+
+.banner__text-contacto--redes-item img {
+  width: 1.2em;
+  height: auto;
+}
+
+.banner__image img {
+  width: 70%;
+  height: auto;
+}
+
+.home-servicios {
+  background-color: rgba(252, 221, 206, 0.4);
+  padding: 2em 0 3em 0;
+}
+
+.home-servicios--intro {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.home-servicios__cards {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-servicios__cards--box {
+  background-color: white;
+  -webkit-box-shadow: 8px 8px 15px rgba(234, 88, 83, 0.5);
+          box-shadow: 8px 8px 15px rgba(234, 88, 83, 0.5);
+  padding: 1em;
+  position: relative;
+}
+
+.home-servicios__cards--box h2 {
+  text-align: center;
+}
+
+.home-servicios__cards--box-dropdown {
+  position: relative;
+  display: none;
+}
+
+.home-servicios__cards--box-dropdown p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.home-servicios__cards--box:hover .home-servicios__cards--box-dropdown {
+  display: block;
+}
 /*# sourceMappingURL=estilos.css.map */
