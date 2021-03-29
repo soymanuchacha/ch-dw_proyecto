@@ -219,3 +219,27 @@
         }
     }
 }
+
+/* Page: contacto */
+.bg-contacto {
+    background-color: $color_cream-op;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em 0;
+    label, legend {
+        color: $color_coral;
+        font-weight: 400;
+        font-size: $font-size_smaller;
+    }
+    .form-check-label {
+        color: $color_blue;
+        padding-right: 2em;
+    }
+    button#blue-button {
+        @include blue-button;
+        padding: 0 4em;
+    }
+}

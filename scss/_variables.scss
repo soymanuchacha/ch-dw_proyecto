@@ -19,6 +19,12 @@ $font-size_smaller: .7rem;
 p {
     color: $color_blue;
     font-family: $font-family;
+    &.p-contacto {
+        text-align: center;
+        font-size: $font-size_medium;
+        width: 40%;
+        margin: 0 auto;
+    }
 }
 a {text-decoration: none;}
 span {font-weight: bold;}

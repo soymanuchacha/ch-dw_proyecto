@@ -1,6 +1,11 @@
 p {
   color: #214f7b;
   font-family: "Roboto", sans-serif; }
+  p.p-contacto {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 40%;
+    margin: 0 auto; }
 
 a {
   text-decoration: none; }
@@ -42,6 +47,10 @@ h1 {
   color: #214f7b;
   font-weight: bold;
   font-size: 1.5rem; }
+  h1.titular-contacto {
+    color: #e82528;
+    text-align: center;
+    padding-top: 2em; }
 
 h2 {
   color: #e82528;
@@ -308,3 +317,31 @@ h2 {
       margin-right: 8em; }
       .entrada__texto--button:hover {
         border-bottom: 3px solid #fcddce; }
+
+/* Page: contacto */
+.bg-contacto {
+  background-color: rgba(252, 221, 206, 0.4); }
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em 0; }
+  form label, form legend {
+    color: #ea5853;
+    font-weight: 400;
+    font-size: 0.7rem; }
+  form .form-check-label {
+    color: #214f7b;
+    padding-right: 2em; }
+  form button#blue-button {
+    text-decoration: none;
+    color: white;
+    background-color: #214f7b;
+    font-size: 0.7rem;
+    padding: .5em 2em;
+    border-radius: .7em;
+    box-shadow: 2px 5px 6px #7dd1f1;
+    padding: 0 4em; }
+    form button#blue-button:hover {
+      color: white;
+      font-weight: bold; }
