@@ -1,0 +1,25 @@
+{
+  "name": "ch-dw_proyecto",
+  "version": "1.0.0",
+  "description": "Estos archivos conforman el proyecto final de mi cursada de desarrollo web en Coder House 2021. Los requisitos son el desarrollo de una web con 5 páginas HTML, aplicación de CSS mediante SCSS, la utilización de Bootstrap y Git, y la subida final al repositorio de Github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/compiler.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soymanuchacha/ch-dw_proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soymanuchacha/ch-dw_proyecto/issues"
+  },
+  "homepage": "https://github.com/soymanuchacha/ch-dw_proyecto#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
