@@ -1,0 +1,32 @@
+//header
+nav#nav-header{
+    background-color: $color_cyan;
+}
+
+//footer
+footer {
+    padding-top: 1em;
+    padding-bottom: .5em;
+    height: auto;
+    background-color: $color_cream;
+    font-size: $font-size_smaller;
+    text-align: center;
+    a {
+        color: $color_blue;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+.footer__navbar {
+    &-list {
+        list-style-type: none;
+        &--item {
+            display: inline-block;
+            margin-right: 2em;
+            img {
+                width: 1.5em;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+//colores
+$color_blue: rgb(33, 79, 123);
+$color_cyan: rgb(125, 209, 241);
+$color_cream: rgb(252, 221, 206);
+$color_coral: rgb(234, 88, 83);
+$color_red: rgb(232,37,40);
+
+//shadows
+$color_cream-op: rgba(252, 221, 206, .4);
+@mixin shadow_coral ($xpx, $ypx, $bpx, $opx){
+    box-shadow: $xpx $ypx $bpx rgba(234, 88, 83, $opx); 
+}
+
+//typography
+$font-family: 'Roboto', sans-serif;
+$font-size_default: 1.2rem;
+$font-size_medium: .9rem;
+$font-size_smaller: .7rem;
+p {
+    color: $color_blue;
+    font-family: $font-family;
+}
+a {text-decoration: none;}
+span {font-weight: bold;}
+@mixin titular-banner {
+    color: $color_red;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: .3em;
+    width: 90%;
+}
+
+//button
+@mixin blue-button {
+    text-decoration: none;
+    color: white;
+    background-color: $color_blue;
+    font-size: $font-size_smaller;
+    padding: .5em 2em;
+    border-radius: .7em;
+    box-shadow: 2px 5px 6px $color_cyan;
+    &:hover {
+        color: white;
+        font-weight: bold;
+    }
+}
+
