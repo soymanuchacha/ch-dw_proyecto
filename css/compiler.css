@@ -49,6 +49,23 @@ h2 {
   font-weight: bold;
   text-transform: uppercase; }
 
+.nav-section {
+  margin: 3em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav-section__external {
+    display: flex;
+    align-items: flex-start; }
+    .nav-section__external img {
+      width: 1em;
+      height: auto; }
+    .nav-section__external p {
+      color: #ea5853;
+      padding-left: 1em; }
+    .nav-section__external a {
+      font-size: 0.7rem; }
+
 /* Page: index */
 .banner {
   margin: 4em 4em 0 4em; }
@@ -111,3 +128,79 @@ h2 {
           margin-bottom: 0; }
       .home-servicios__cards--box:hover .home-servicios__cards--box-dropdown {
         display: block; }
+
+/* Page: servicios */
+.servicios {
+  margin: 0 4em 2em 4em;
+  display: grid;
+  grid-template-columns: repeat 4, 1fr;
+  grid-gap: 2em; }
+  .servicios__image {
+    grid-row: 1/4;
+    animation-name: cascade;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s; }
+  .servicios__card {
+    grid-column: 1/2;
+    background-color: white;
+    padding: 1.5em;
+    box-shadow: -6px 6px 20px rgba(234, 88, 83, 0.5); }
+    .servicios__card--text {
+      font-size: 0.9rem; }
+    .servicios__card-img {
+      width: auto;
+      height: 5.5em; }
+    .servicios__card .servicios__card-img--consultoria {
+      background-image: url("../media/icons/consultoria.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--plan-estrategico {
+      background-image: url("../media/icons/plan-estrategico.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--identidad {
+      background-image: url("../media/icons/identidad.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--diseno-grafico {
+      background-image: url("../media/icons/diseno-grafico.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--diseno-web {
+      background-image: url("../media/icons/diseno-web.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--desarrollo-web {
+      background-image: url("../media/icons/desarrollo-web.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--community {
+      background-image: url("../media/icons/community.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+    .servicios__card .servicios__card-img--ilustracion {
+      background-image: url("../media/icons/ilustracion.svg");
+      background-repeat: no-repeat;
+      background-size: 4em; }
+
+@keyframes cascade {
+  0% {
+    background-color: #e82528;
+    height: 1em; }
+  25% {
+    background-color: #ea5853;
+    height: 25%; }
+  35% {
+    height: 50%; }
+  50% {
+    background-color: #fcddce;
+    height: 100%; }
+  65% {
+    height: 50%; }
+  75% {
+    background-color: #ea5853;
+    height: 25%; }
+  100% {
+    background-color: #e82528;
+    height: 1em; } }

@@ -43,3 +43,24 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
+.nav-section {
+    margin: 3em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__external {
+        display: flex;
+        align-items: flex-start;
+        img {
+            width: 1em;
+            height: auto;
+        }
+        p {
+            color: $color_coral;
+            padding-left: 1em;
+        }
+        a {
+            font-size: $font-size_smaller;
+        }
+    }
+}

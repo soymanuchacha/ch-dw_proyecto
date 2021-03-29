@@ -72,3 +72,68 @@
         }
     }
 }
+
+/* Page: servicios */
+.servicios {
+    margin: 0 4em 2em 4em;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-gap: 2em;
+    &__image {
+        grid-row: 1/4;
+        animation-name: cascade;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+    }
+    &__card {
+        grid-column: 1/2;
+        background-color: white;
+        padding: 1.5em;
+        @include shadow_coral (-6px, 6px, 20px, .5)
+        &--titular {}
+        &--text {
+            font-size: $font-size_medium;
+        }
+        &-img {
+            width: auto;
+            height: 5.5em;
+        }
+        @each $servicio in consultoria, plan-estrategico, identidad, diseno-grafico, diseno-web, desarrollo-web, community, ilustracion {
+            .servicios__card-img--#{$servicio} {
+                background-image: url('../media/icons/#{$servicio}.svg');
+                background-repeat: no-repeat;
+                background-size: 4em;
+            }
+        }
+    }
+}
+
+@keyframes cascade {
+    0% {
+        background-color: $color_red;
+        height: 1em;
+    }
+    25% {
+        background-color: $color_coral;
+        height: 25%;
+    }
+    35% {
+        height: 50%;
+    }
+    50% {
+        background-color: $color_cream;
+        height: 100%;
+    }
+    65% {
+        height: 50%;
+    }
+    75% {
+        background-color: $color_coral;
+        height: 25%;
+    }
+    100% {
+        background-color: $color_red;
+        height: 1em;
+    }
+}
